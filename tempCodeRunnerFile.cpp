@@ -2,21 +2,31 @@
 using namespace std;
 int main()
 {
-    string a,b;
-    cin>>a>>b;
-    transform(a.begin(), a.end(),a.begin(), ::tolower);
-    transform(b.begin(),b.end(),b.begin(), :: tolower);
-    if(a>b)
+    int n,countb,counta,total;
+    cin >> n;
+    counta = 0;
+    countb = 0;
+    string s = to_string(n);
+    for (int i = 0; i < s.length(); i++)
     {
-        cout<<1;
+        if(s[i]=='4')
+        {
+            counta++;
+        }
+        else if (s[i] == '7')
+        {
+            countb++;
+        }
+        
     }
-    else if (b>a)
+    total = counta + countb;
+
+    if (counta >= 1 && countb >= 1 && total<=s.length()||counta==4||countb==7)
     {
-        cout<<-1;
+        cout << "YES";
     }
     else
-    cout<<0;
-    
-
-    
+    {
+        cout << "NO";
+    }
 }

@@ -1,10 +1,10 @@
 #include<stdio.h>
-int main()
-{
-int i = 1;
-while(i<=3 && i++)
-{
-    printf("%d",i);
-}
 
-}
+int* fun() {
+int x = 10;
+ return &x;
+ }
+ int main() {
+ printf("%d"
+, *fun());
+ }
