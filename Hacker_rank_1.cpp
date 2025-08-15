@@ -10,7 +10,7 @@ int main()
     {
         
             cin >> s[i][0]>>s[i][1];
-        
+         
         
     }
     for (int i = 0; i < n; i++)
