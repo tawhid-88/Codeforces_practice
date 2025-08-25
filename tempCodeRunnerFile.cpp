@@ -1,22 +1,17 @@
-#include <iostream>
-#include <cctype>
+#include<iostream>
 using namespace std;
-
 int main()
 {
     int n;
     cin >> n;
-    string s;
-    cin >> s;
-    int seen[26] = {0};
-    for (char c : s)
+    int s[n],p[n];
+    for (int i = 1; i<=n; i++)
     {
-        c = tolower(c);
-        seen[c - 'a'] = 1;
+        cin >> s[i];
+        p[s[i]] = i;
     }
-    int total = 0;
-    for (int i = 0; i < 26; ++i)
-        total += seen[i];
-    cout << (total == 26 ? "YES" : "NO") << endl;
-    return 0;
+    for (int i = 1; i <= n; i++)
+    {
+        cout << p[i] << " ";
+    }
 }
