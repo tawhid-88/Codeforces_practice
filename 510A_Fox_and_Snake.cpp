@@ -24,8 +24,8 @@ int main()
             cout << "#";
             for (int j = 1; j < m; ++j)
                 cout << ".";
+            cout << endl;
         }
-       
     }
     return 0;
 }
