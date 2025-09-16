@@ -11,7 +11,7 @@ int main()
         cin >> a >> b >> c >> d;
         if (b > a)
             count++;
-        if (c > a)
+        if (c > a) 
             count++;
         if (d > a)
             count++;
